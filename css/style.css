@@ -1,0 +1,45 @@
+/* Resetando estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilizando o menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilizando a seção principal */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Estilizando o rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
