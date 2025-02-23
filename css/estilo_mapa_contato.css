@@ -1,0 +1,21 @@
+/* Estiliza a seção do mapa */
+.map-container section {
+    text-align: center; /* Centraliza os elementos dentro da seção */
+    margin: 40px 0; /* Adiciona espaço acima e abaixo do mapa */
+}
+
+/* Estiliza o título da seção */
+.map-container h2 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    font-size: 24px; /* Tamanho do texto */
+    color: #333; /* Cor escura para melhor leitura */
+}
+
+/* Estiliza o mapa incorporado */
+.map-container iframe {
+    width: 90%; /* Faz o mapa ocupar 90% da largura da tela */
+    max-width: 800px; /* Define uma largura máxima para evitar que fique muito grande */
+    height: 300px; /* Altura do mapa */
+    border-radius: 10px; /* Adiciona cantos arredondados ao mapa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave para destaque */
+}

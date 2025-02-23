@@ -220,6 +220,37 @@ form button:hover {
     background: #f39c12;
 }
 
+/* Ajustes para telas menores (celulares e tablets) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .properties {
+        grid-template-columns: 1fr; /* Exibir um imóvel por linha */
+    }
+
+    .property-detail {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .swiper-container {
+        height: 250px;
+    }
+}
+
+
 
 /* MEU TESTE - AJUSTAR DEPOIS */
 section {
