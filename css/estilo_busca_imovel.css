@@ -1,0 +1,68 @@
+/* Estiliza a seção de busca */
+.search-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estiliza o formulário de busca */
+#search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Estiliza os campos do formulário */
+#search-form label {
+    font-weight: bold;
+}
+
+#search-form input, 
+#search-form select, 
+#search-form button {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estiliza a lista de imóveis */
+.imoveis-container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estiliza cada imóvel */
+.imovel {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Estiliza as imagens dos imóveis */
+.imovel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Estiliza os detalhes do imóvel */
+.imovel h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.imovel p {
+    font-size: 16px;
+    color: gray;
+}
