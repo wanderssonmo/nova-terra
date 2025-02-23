@@ -1,0 +1,48 @@
+/* Estiliza a seção do blog */
+.blog-container {
+    width: 80%;
+    margin: 40px auto; /* Centraliza a seção */
+    text-align: center;
+}
+
+/* Estiliza os posts */
+.post {
+    background: #fff; /* Fundo branco */
+    padding: 20px;
+    margin-bottom: 20px; /* Espaço entre os posts */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza as imagens dos posts */
+.post img {
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+    max-height: 300px; /* Define altura máxima */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+
+/* Estiliza os títulos dos posts */
+.post h3 {
+    color: #333;
+    font-size: 22px;
+}
+
+/* Estiliza a data do post */
+.date {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Estiliza os links de "Leia mais" */
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF; /* Cor azul para destacar */
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
