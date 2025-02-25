@@ -1,3 +1,11 @@
+/* SITE EM CONSTRUÇÃO - APAGAR APÓS CONCLUÍDO */
+.emConstrucao {
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+/* 👆 SITE EM CONSTRUÇÃO - APAGAR APÓS CONCLUÍDO */
+
 /* Resetando estilos padrões do navegador */
 * {
     margin: 0;
