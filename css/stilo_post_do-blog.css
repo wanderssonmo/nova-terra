@@ -1,0 +1,38 @@
+/* Estilo da lista de posts */
+.blog-lista {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.blog-lista article {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.blog-lista h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-lista h2 a:hover {
+    color: #007bff;
+}
+
+/* Estilo dos posts individuais */
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #333;
+}
+
+article h3 {
+    color: #007bff;
+}
