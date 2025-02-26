@@ -259,6 +259,88 @@ form button:hover {
 }
 
 
+/* ESTILO MENUS RESPONSIVO 📍 */
+    /* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* Estilo da logo */
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Estilo do menu */
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Botão de menu para mobile */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Exibe o botão no mobile */
+    }
+
+    nav {
+        display: none; /* Esconde o menu inicialmente */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav.show {
+        display: block; /* Mostra o menu ao clicar no botão */
+    }
+}
+/* ESTILO MENUS RESPONSIVO 👆 */
+
 
 /* MEU TESTE - AJUSTAR DEPOIS */
 section {
