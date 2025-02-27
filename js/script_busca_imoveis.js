@@ -2,26 +2,34 @@
 // Lista de imóveis fictícios (simulação de um banco de dados)
 const imoveis = [
     {
-        tipo: "casa",
-        localizacao: "São Paulo",
-        preco: 450000,
-        imagem: "img/casa1.jpg",
-        descricao: "Casa espaçosa com 3 quartos e quintal."
+        tipo: "lote",
+        localizacao: "Brasilia de Minas",
+        preco: 90000,
+        imagem: "assets/img/lote/lote1.jpg",
+        descricao: "Lote com excelente localização."
     },
     {
-        tipo: "apartamento",
-        localizacao: "Rio de Janeiro",
-        preco: 600000,
-        imagem: "img/apartamento1.jpg",
-        descricao: "Apartamento moderno com vista para o mar."
+        tipo: "chacara",
+        localizacao: "São João da Ponte",
+        preco: 60000,
+        imagem: "assets/img/chacara/chacara1.jpg",
+        descricao: "Chácara exelente para você e sua família."
     },
     {
-        tipo: "casa",
-        localizacao: "Belo Horizonte",
-        preco: 350000,
-        imagem: "img/casa2.jpg",
-        descricao: "Casa confortável em bairro tranquilo."
+        tipo: "lote",
+        localizacao: "Montes Claros",
+        preco: 180000,
+        imagem: "assets/img/lote/lote2.jpg",
+        descricao: "Lote com excelente localização."
+    },
+    {
+        tipo: "lote",
+        localizacao: "Brasilia de Minas",
+        preco: 110000,
+        imagem: "assets/img/lote/lote3.jpg",
+        descricao: "Lote com excelente localização."
     }
+    
 ];
 
 // Função para exibir os imóveis filtrados

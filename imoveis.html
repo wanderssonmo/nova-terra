@@ -3,61 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar Imóveis - Nova Terra</title>
-    <link rel="stylesheet" href="css/estilo_busca_imovel.css"> <!-- Importando o arquivo CSS -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Importando o arquivo CSS -->
-    <script src="js/script_busca_imoveis.js" defer></script> <!-- Importando o JavaScript -->
+    <title>Imóveis - Nova Terra</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- Cabeçalho do site -->
     <h1 class="emConstrucao">📍 ATENÇÃO! SITE EM CONSTRUÇÃO.</h1> <!-- APAGAR DEPOIS DE CONCLUÍDO-->
     <header>
-        <h1>Buscar Imóveis</h1>
+        <h1>Loteamento e Chacreamento</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
                 <li><a href="imoveis.html">Imóveis</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="busca_imoveis.html">EDITAR</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção de busca -->
-    <section class="search-container">
-        <h2>Encontre seu Imóvel</h2>
-        <form id="search-form">
-            <!-- Filtro por tipo de imóvel -->
-            <label for="tipo">Tipo:</label>
-            <select id="tipo">
-                <option value="">Todos</option>
-                <option value="casa">Casa</option>
-                <option value="apartamento">Apartamento</option>
-            </select>
+    <section>
+        <h2>Nossos Imóveis</h2>
+        <p>Confira os imóveis disponíveis para venda e locação.</p>
 
-            <!-- Filtro por localização -->
-            <label for="localizacao">Localização:</label>
-            <input type="text" id="localizacao" placeholder="Digite a cidade ou bairro">
-
-            <!-- Filtro por preço -->
-            <label for="preco">Preço Máximo:</label>
-            <input type="number" id="preco" placeholder="Ex: 500000">
-
-            <!-- Botão de busca -->
-            <button type="submit">Buscar</button>
-        </form>
+        <div class="gallery">
+            <div class="property">
+                <a href="http://tomcat.aws.sistemasivi.com.br:8880/sivi_mapas_incorporacaosolar/principal.jsp?id=5bf214661679b78e08708d3e2054cd7c&funcao=visualizarMapas&loteamento=1" target="_blank">
+                    <img src="assets/img/imovel1.jpg" alt="Apartamento Luxo">
+                    <h3>Loteamento Nova Brasília</h3>
+                    <p>Lotes exemplos, apartir de</p>
+                    <span class="price">R$ 90.000,00</span>
+                </a>
+            </div>
+            
+            <div class="property">
+                <a href="pages/imovel2.html">
+                    <img src="assets/img/imovel2.jpg" alt="Casa Moderna">
+                    <h3>Casa Moderna</h3>
+                    <p>4 quartos, piscina, área de lazer completa.</p>
+                    <span class="price">R$ 1.200.000</span>
+                </a>
+            </div>
+            
+            <div class="property">
+                <a href="pages/imovel3.html">
+                    <img src="assets/img/imovel3.jpg" alt="Sala Comercial">
+                    <h3>Sala Comercial</h3>
+                    <p>Localizada no centro, ideal para escritórios.</p>
+                    <span class="price">R$ 350.000</span>
+                </a>
+            </div>
+            
+        </div>
     </section>
 
-    <!-- Seção onde os imóveis serão exibidos -->
-    <section id="lista-imoveis" class="imoveis-container">
-        <!-- Os imóveis serão carregados aqui via JavaScript -->
-    </section>
 
-    <!-- Rodapé do site -->
     <footer>
-        <p>&copy; 2025 Nova Terra Administradora de Imóveis. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Nova Terra Administradora de Imóveis LTDA</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

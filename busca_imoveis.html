@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Imóveis - Nova Terra</title>
+    <link rel="stylesheet" href="css/estilo_busca_imovel.css"> <!-- Importando o arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Importando o arquivo CSS -->
+    <script src="js/script_busca_imoveis.js" defer></script> <!-- Importando o JavaScript -->
+</head>
+<body>
+
+    <!-- Cabeçalho do site -->
+    <h1 class="emConstrucao">📍 ATENÇÃO! SITE EM CONSTRUÇÃO.</h1> <!-- APAGAR DEPOIS DE CONCLUÍDO-->
+    <header>
+        <h1>Buscar Imóveis</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="imoveis.html">Imóveis</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de busca -->
+    <section class="search-container">
+        <h2>Encontre seu Imóvel</h2>
+        <form id="search-form">
+            <!-- Filtro por tipo de imóvel -->
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="">Todos</option>
+                <option value="lote">Lote</option>
+                <option value="chacara">Chácara</option>
+            </select>
+
+            <!-- Filtro por localização -->
+            <label for="localizacao">Localização:</label>
+            <input type="text" id="localizacao" placeholder="Digite o nome da cidade">
+
+            <!-- Filtro por preço -->
+            <label for="preco">Preço Máximo:</label>
+            <input type="number" id="preco" placeholder="Ex: 50000">
+
+            <!-- Botão de busca -->
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Seção onde os imóveis serão exibidos -->
+    <section id="lista-imoveis" class="imoveis-container">
+        <!-- Os imóveis serão carregados aqui via JavaScript -->
+    </section>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2025 Nova Terra Administradora de Imóveis. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
