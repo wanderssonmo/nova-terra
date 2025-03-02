@@ -24,6 +24,19 @@
     margin-top: 10%;
 }
 
+@media (max-width: 768px) {
+    .emConstrucao {
+        font-size: 22px;
+        text-align: center;
+        padding-top: 5px;
+        margin-top: -150px;
+    }
+
+    .sessao_inicial {
+    margin-top: 150px;
+    }
+}
+
 /* ===================== RASCUNHO 👆 ================= */
 
 
@@ -102,7 +115,7 @@ nav ul li a:hover {
 /* ============================== */
 .menu-toggle {
     display: none;
-    font-size: 28px;
+    font-size: 25px;
     background: none;
     border: none;
     color: white;
@@ -120,9 +133,14 @@ nav ul li a:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background: #333;
+        background: #c74a02;
         text-align: center;
         padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    nav .esconder_link_menu { /* ESCONDE A LISTA AO CLICAR NO MENU RESPONSIVO */
+        display: none;
     }
 
     nav ul {
@@ -130,12 +148,38 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        padding: 10px 0;
+        padding: 7px 0;
     }
+
 
     nav.show {
         display: block;
     }
+
+    /* Adicionando as colunas no menu responsivo */
+    nav .menu-colunas {
+        display: flex;
+        flex-direction: row; /* Colunas em linha */
+        justify-content: space-around; /* Distribuição uniforme */
+        padding: 20px; /* Adicionando espaçamento */
+    }
+
+    nav .coluna {
+        display: flex;
+        flex-direction: column; /* Itens em coluna dentro de cada coluna */
+        align-items: center; /* Centralizando os itens */
+    }
+
+    nav .coluna a {
+        padding: 5px 10px;
+        color: white; /* Cor dos links */
+        text-decoration: none; /* Removendo sublinhado */
+    }
+
+    .coluna a:hover {
+        color: #f39c12;
+    }
+
 }
 
 /* ============================== */
