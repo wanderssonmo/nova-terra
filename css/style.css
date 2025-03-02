@@ -1,12 +1,35 @@
-/* SITE EM CONSTRUÇÃO - APAGAR APÓS CONCLUÍDO */
-.emConstrucao {
-    background-color: black;
-    color: red;
-    text-align: center;
-}
-/* 👆 SITE EM CONSTRUÇÃO - APAGAR APÓS CONCLUÍDO */
+/* ============================== */
+/*   RASCUNHO - APAGAR DEPOIS     */
+/* ============================== */
 
-/* Resetando estilos padrões do navegador */
+/* PALETAS DE CORES:
+.color1 { #BF4539 };
+.color2 { #D99F59 };
+.color3 { #D93A2B };
+.color4 { #BF6860 };
+.color5 { #FFFFFF };
+*/
+
+.emConstrucao {
+    position: fixed;
+    text-align: center;
+    background-color: #0e0e0e;
+    color: #f70404;
+    width: 100%;
+    margin-top: -10%;
+    padding-bottom: 10px;
+}
+
+.sessao_inicial {
+    margin-top: 10%;
+}
+
+/* ===================== RASCUNHO 👆 ================= */
+
+
+/* ============================== */
+/*         RESET DE ESTILOS       */
+/* ============================== */
 * {
     margin: 0;
     padding: 0;
@@ -14,49 +37,113 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Corpo do site */
+/* ============================== */
+/*         ESTILOS GERAIS         */
+/* ============================== */
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #f5e8d8;
+    color: #0c0c0c;
 }
 
-/* Cabeçalho */
+/* ============================== */
+/*            CABEÇALHO           */
+/* ============================== */
 header {
-    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #BF4539;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin-top: 45px; /*==APAGAR DEPOIS DE PRONTP==*/
 }
 
-header h1 {
+.logo h1 {
     font-size: 24px;
 }
 
-/* Menu de navegação */
-nav ul {
-    list-style: none;
+/* ============================== */
+/*          MENU DE NAVEGAÇÃO     */
+/* ============================== */
+nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
 }
 
-nav a {
-    text-decoration: none;
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
+    text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-nav a:hover {
+nav ul li a:hover {
     color: #f39c12;
 }
 
-/* Seção principal */
+/* ============================== */
+/*        MENU RESPONSIVO         */
+/* ============================== */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav.show {
+        display: block;
+    }
+}
+
+/* ============================== */
+/*       SEÇÃO PRINCIPAL          */
+/* ============================== */
 section {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 25px auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -64,30 +151,9 @@ section {
     text-align: center;
 }
 
-/* Rodapé */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/* Responsividade - Adaptação para telas menores */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-    
-    nav a {
-        display: block;
-        padding: 10px;
-    }
-}
-
-/* Estilização do formulário de contato */
+/* ============================== */
+/*            FORMULÁRIO          */
+/* ============================== */
 form {
     display: flex;
     flex-direction: column;
@@ -123,8 +189,9 @@ form button:hover {
     background-color: #e67e22;
 }
 
-
-/* Galeria de imóveis */
+/* ============================== */
+/*       GALERIA DE IMÓVEIS       */
+/* ============================== */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -161,8 +228,9 @@ form button:hover {
     font-weight: bold;
 }
 
-
-/* Página de detalhes do imóvel */
+/* ============================== */
+/*    DETALHES DO IMÓVEL          */
+/* ============================== */
 .property-detail {
     max-width: 600px;
     margin: auto;
@@ -186,6 +254,9 @@ form button:hover {
     margin: 10px 0;
 }
 
+/* ============================== */
+/*          BOTÕES GERAIS         */
+/* ============================== */
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -202,8 +273,20 @@ form button:hover {
     background: #e67e22;
 }
 
+/* ============================== */
+/*         RODAPÉ                 */
+/* ============================== */
+footer {
+    background-color: #BF4539;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
 
-/* Estilização do carrossel */
+/* ============================== */
+/*       CARROSSEL DE IMAGENS     */
+/* ============================== */
 .swiper-container {
     width: 100%;
     max-width: 600px;
@@ -228,24 +311,12 @@ form button:hover {
     background: #f39c12;
 }
 
-/* Ajustes para telas menores (celulares e tablets) */
+/* ============================== */
+/*  AJUSTES RESPONSIVOS ADICIONAIS */
+/* ============================== */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
     .properties {
-        grid-template-columns: 1fr; /* Exibir um imóvel por linha */
+        grid-template-columns: 1fr;
     }
 
     .property-detail {
@@ -256,93 +327,4 @@ form button:hover {
     .swiper-container {
         height: 250px;
     }
-}
-
-
-/* ESTILO MENUS RESPONSIVO 📍 */
-    /* Estilo do cabeçalho */
-/* Estilo do cabeçalho */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    color: white;
-    padding: 15px 20px;
-    position: relative;
-}
-
-/* Estilo da logo */
-.logo h1 {
-    font-size: 24px;
-}
-
-/* Estilo do menu */
-nav {
-    display: flex;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Botão de menu para mobile */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* Estilo para telas menores */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Exibe o botão no mobile */
-    }
-
-    nav {
-        display: none; /* Esconde o menu inicialmente */
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #333;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    nav ul li {
-        padding: 10px 0;
-    }
-
-    nav.show {
-        display: block; /* Mostra o menu ao clicar no botão */
-    }
-}
-/* ESTILO MENUS RESPONSIVO 👆 */
-
-
-/* MEU TESTE - AJUSTAR DEPOIS */
-section {
-    background-color: #f3ec82;
 }
