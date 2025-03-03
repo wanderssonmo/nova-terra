@@ -16,24 +16,29 @@
     background-color: #0e0e0e;
     color: #f70404;
     width: 100%;
-    margin-top: -10%;
+    margin-top: -213px;
     padding-bottom: 10px;
 }
 
 .sessao_inicial {
-    margin-top: 10%;
+    margin-top: 213px;
 }
 
 @media (max-width: 768px) {
     .emConstrucao {
         font-size: 22px;
         text-align: center;
-        padding-top: 5px;
-        margin-top: -150px;
+        padding-top: 7px;
+        margin-top: -213px;
+    }
+
+    div.emConstrucao h1 {
+        font-size: 100%;
+        text-align: center;
     }
 
     .sessao_inicial {
-    margin-top: 150px;
+    margin-top: 213px;
     }
 }
 
@@ -65,9 +70,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #BF4539;
-    color: white;
-    padding: 15px 20px;
+    background: #fdfdfd;
+    color: #BF4539;
+    padding: 5px 25px;
     position: fixed;
     top: 0;
     left: 0;
@@ -76,7 +81,12 @@ header {
     margin-top: 45px; /*==APAGAR DEPOIS DE PRONTP==*/
 }
 
-.logo h1 {
+div.logo_cabecalho img {
+    width: 13em;
+    
+}
+
+.logo_cabecalho h1 {
     font-size: 24px;
 }
 
@@ -95,11 +105,11 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #BF4539;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -118,8 +128,12 @@ nav ul li a:hover {
     font-size: 25px;
     background: none;
     border: none;
-    color: white;
+    color: #BF4539;
     cursor: pointer;
+}
+
+.menu-colunas { /* ESCONDE A LISTA DO MENU RESPONSIVO */
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -133,7 +147,7 @@ nav ul li a:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background: #c74a02;
+        background: #BF4539;
         text-align: center;
         padding: 10px 0;
         margin-top: 20px;
