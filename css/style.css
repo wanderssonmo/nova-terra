@@ -47,10 +47,6 @@
 
     }
 
-    .menu-toggle {
-        text-align: top center;
-    }
-
     header nav div.menu-colunas {
         padding: 0;
         margin: 0;
@@ -168,8 +164,8 @@ nav ul li a:hover {
         width: 100%;
         background: #BF4539;
         text-align: center;
-        padding: 10px 0;
-        margin-top: 20px;
+        padding: 2px 0;
+        margin-top: 83px;
     }
 
     nav .esconder_link_menu { /* ESCONDE A LISTA AO CLICAR NO MENU RESPONSIVO */
@@ -211,6 +207,15 @@ nav ul li a:hover {
 
     .coluna a:hover {
         color: #f39c12;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 11px;
+        text-align: left;
     }
 
 }
