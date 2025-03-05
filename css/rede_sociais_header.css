@@ -1,0 +1,25 @@
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #0077b5; /* Cor azul do LinkedIn como base */
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: #005582;
+}
+
+.social-btn i {
+    vertical-align: middle;
+}
