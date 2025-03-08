@@ -1,25 +1,39 @@
 .redes-sociais {
     display: flex;
-    gap: 10px;
+    gap: 15px; /* Espaço entre os ícones */
 }
 
 .social-btn {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: #0077b5; /* Cor azul do LinkedIn como base */
-    color: white;
-    text-align: center;
-    line-height: 35px;
+    font-size: 24px;
+    color: #f70404; /* Ícones brancos */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    font-size: 18px;
-    transition: 0.3s;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Facebook - Azul */
+.facebook {
+    background-color: #1877F2;
+}
+
+/* Instagram - Gradiente oficial */
+.instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+/* WhatsApp - Verde */
+.whatsapp {
+    background-color: #25D366;
+}
+
+/* Efeito hover */
 .social-btn:hover {
-    background: #005582;
-}
-
-.social-btn i {
-    vertical-align: middle;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63);
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
 }
