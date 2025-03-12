@@ -87,7 +87,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fdfdfd;
+    /* background: #fdfdfd; */
+    background: linear-gradient(to top, #f8160125, #fceb02);
     color: #BF4539;
     padding: 5px 25px;
     position: fixed;
