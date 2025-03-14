@@ -26,6 +26,7 @@
     
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo de estilos -->
+    <link rel="stylesheet" href="css/estilo_carrossel.css">
     <link rel="stylesheet" href="css/rede_sociais_header.css"> <!--Estilos dos boões das redes sociais-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- faz parte do Font Awesome, uma biblioteca de ícones. Se a biblioteca não estiver carregada no seu projeto, os ícones não aparecerão.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
@@ -81,7 +82,23 @@
         <p>Somos especialistas na administração e intermediação de imóveis.</p>
     </section>
 
-    <section>
+    <section class="carousel-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/carrossel/carrossel1-1.jpg" alt="Foto 1"></div>
+              <div class="swiper-slide"><img src="assets/img/carrossel1-2.jpg" alt="Foto 2"></div>
+              <div class="swiper-slide"><img src="assets/img/carrossel1-3.jpg" alt="Foto 3"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    <!--👆-->
+    
+
+        <!-- ====================
+         <section>
         <div class="property-detail">
           <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -94,7 +111,7 @@
             <div class="swiper-button-prev"></div>
           </div>
         </div>
-    </section>
+    </section> 
     <!--👆-->
 
     <section>

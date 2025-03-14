@@ -1,0 +1,114 @@
+/* Define a altura da seção */
+.carousel-section {
+    width: 90%; /* Largura total */
+    height: 90%; /* Altura total da janela (viewport) */
+    margin: 10;
+    padding: 6px;
+    
+  }
+
+/* Estiliza o contêiner do carrossel */
+.swiper-container {
+    width: 100%; /* O carrossel ocupa toda a largura disponível */
+    max-width: 800px; /* Limite máximo para telas grandes */
+    height: 300px; /* Altura fixa do carrossel */
+    position: relative; /* Base para posicionamento dos elementos internos */
+    overflow: hidden; /* Garante que slides fora da visão sejam escondidos */
+  }
+  
+  /* Estiliza os slides */
+  .swiper-slide {
+    display: flex; /* Centraliza o conteúdo do slide */
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Garante que cada slide ocupe a largura total */
+    height: 100%; /* Garante que cada slide ocupe a altura total */
+    opacity: 0; /* Slides começam invisíveis por padrão */
+    position: absolute; /* Posiciona os slides no mesmo espaço */
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease; /* Transição suave para visibilidade */
+  }
+  
+  /* Garante que apenas o slide ativo seja visível */
+  .swiper-slide-active {
+    opacity: 1; /* Apenas o slide ativo fica visível */
+    position: relative; /* Remove o posicionamento absoluto do ativo */
+  }
+  
+  /* Ajusta as imagens dentro do carrossel */
+  .swiper-slide img {
+    width: 100%; /* Imagem ocupa toda a largura do slide */
+    height: 100%; /* Imagem ocupa toda a altura do slide */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+  /* Botões de navegação */
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Botões circulares */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+  }
+  
+  /* Efeito ao passar o mouse nos botões */
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro */
+  }
+  
+  /* Estiliza os pontos de paginação */
+  .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.7); /* Cor padrão dos pontos */
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    transition: background-color 0.3s ease; /* Transição suave */
+  }
+  
+  /* Ponto ativo da paginação */
+  .swiper-pagination-bullet-active {
+    background-color: rgb(216, 48, 6); /* Cor destacada para o ponto ativo */
+  }
+  
+  /* === Responsividade === */
+  
+  /* Telas menores que 768px (tablets e celulares) */
+  @media screen and (max-width: 768px) {
+    .swiper-container {
+      height: 300px; /* Reduz a altura */
+    }
+  
+    .swiper-slide img {
+      border-radius: 5px; /* Bordas menos arredondadas */
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 30px; /* Botões menores */
+      height: 30px;
+    }
+  }
+  
+  /* Telas menores que 480px (smartphones) */
+  @media screen and (max-width: 480px) {
+    .swiper-container {
+      height: 250px; /* Altura ainda menor */
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none; /* Remove botões em telas pequenas */
+    }
+  
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+    }
+  }

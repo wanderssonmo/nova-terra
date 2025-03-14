@@ -88,7 +88,7 @@ header {
     justify-content: space-between;
     align-items: center;
     /* background: #fdfdfd; */
-    background: linear-gradient(to top, #f8160125, #fceb0241);
+    background: linear-gradient(to top, #f3c7c3, #faf4a2);
     color: #BF4539;
     padding: 5px 25px;
     position: fixed;
@@ -229,6 +229,8 @@ nav ul li a:hover {
 /* ============================== */
 /*       SEÇÃO PRINCIPAL          */
 /* ============================== */
+
+
 section {
     max-width: 800px;
     margin: 25px auto;
@@ -370,49 +372,4 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-}
-
-/* ============================== */
-/*       CARROSSEL DE IMAGENS     */
-/* ============================== */
-.swiper-container {
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #f39c12;
-}
-
-.swiper-pagination-bullet-active {
-    background: #f39c12;
-}
-
-/* ============================== */
-/*  AJUSTES RESPONSIVOS ADICIONAIS */
-/* ============================== */
-@media (max-width: 768px) {
-    .properties {
-        grid-template-columns: 1fr;
-    }
-
-    .property-detail {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .swiper-container {
-        height: 250px;
-    }
 }
