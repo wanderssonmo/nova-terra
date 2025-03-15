@@ -28,7 +28,7 @@
 
 /* Efeito hover */
 .social-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63);
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
 }
